@@ -18,13 +18,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier":"RideCab",
+      "config":{
+        "googleMapsApiKey":"AIzaSyBAT0XXPJEJvuJtEbfdEV2gHvd5F76dy0I"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
+  
+      
+    
+
     },
     "web": {
       "favicon": "./assets/favicon.png"

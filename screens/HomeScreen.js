@@ -26,6 +26,7 @@ const HomeScreen = () => {
           },
           textInput: {
             fontSize: 18,
+           
           },
        
         }}
@@ -47,13 +48,14 @@ const HomeScreen = () => {
           key: GOOGLE_MAPS_APIKEY,
           language: 'en',
         }}
-        // requestUrl={{
-        //   useOnPlatform: 'web', // or "all"
-        //   url:
-        //     'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
-        // }}  
-        nearbyPlacesAPI='GooglePlacesSearch'
-         debounce={400}/>
+        requestUrl={{
+          useOnPlatform: 'web', // or "all"
+          url:
+            'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
+        }}  
+        nearbyPlacesAPI="GooglePlacesSearch"
+         debounce={400}
+         />
         <NavOptions />
       </View>
     </SafeAreaView>
